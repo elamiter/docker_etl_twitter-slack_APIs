@@ -5,7 +5,7 @@
 - [General info](#general-info)
 - [Technologies and Libraries](#technologies-and-libraries)
 - [Setup](#setup)
-- [Status](#status)
+
 
 ### General info
 This project is about how to built a docker-pipeline which consists of a tweet collector, its sentiment analysis and posting them via slack bot.  
