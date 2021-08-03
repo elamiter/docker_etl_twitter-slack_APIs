@@ -35,7 +35,7 @@ The following steps are applied:
 The main reason of using docker-container is to make setup easy and applicable on any machine.
 Before creating Docker-Containers, you need a Twitter Developer Account to get `API KEY`, `API SECRET` and `access token`, `access token secret`.  
 You can apply twitter dev-acc [here](https://developer.twitter.com/en/apply).  
-After you've got the API-key and the API-secret, you are ready to create Docker-Compose using Docker commands:
+After you've got the API-key and the API-secret, you are ready to create docker-compose using docker commands:
 - For running these commands you need to `cd` into the folder that contains the `docker-compose.yml` file.
 
 - (re-)build images of services 
