@@ -1,0 +1,6 @@
+tweepy
+pandas
+sqlalchemy
+python-dotenv
+psycopg2-binary
+vaderSentiment

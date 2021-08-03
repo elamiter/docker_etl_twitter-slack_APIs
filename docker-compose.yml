@@ -1,0 +1,29 @@
+version: "3"
+# service -> container
+services:
+    # service name
+    mypg:
+        image: postgres
+        ports:
+            # hostport:guestport
+            - 5555:5432
+        # setting environment variables
+        env_file:
+            - .env
+    tweet_collector:
+        build: tweet_collector
+        volumes:
+            - ./tweet_collector/src:/app/
+            - ./tweet_collector/logs:/log/
+        depends_on: 
+            - mypg
+        env_file:
+            - .env
+    slack_bot:
+        build: slack_bot
+        volumes:
+            - ./slack_bot/src:/app/
+        depends_on: 
+            - tweet_collector
+        env_file:
+            - .env
