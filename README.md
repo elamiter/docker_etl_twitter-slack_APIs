@@ -8,7 +8,7 @@
 
 
 ### General info
-This project is about how to built a docker-pipeline which consists of a tweet collector, its sentiment analysis and posting them via slack bot.  
+This project is about how to built a docker-pipeline which consists a tweet collector, its sentiment analysis and posting them via slack bot.  
 Every 10 minutes the last tweet about Covid is collected, saved into a database and shared in Slack.  
 The following steps are applied:
 - Docker Image, Container, Compose
